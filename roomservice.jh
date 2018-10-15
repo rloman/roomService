@@ -1,0 +1,27 @@
+entity Task {
+	title String,
+	description String,
+    dueDate LocalDate
+}
+
+entity Room {
+	name String
+	
+}
+
+relationship OneToMany {
+	Room{room} to Task
+}
+
+
+// Set pagination options
+paginate Room, Task with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
