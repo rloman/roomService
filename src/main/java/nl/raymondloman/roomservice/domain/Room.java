@@ -30,7 +30,7 @@ public class Room implements Serializable {
 
     @OneToMany(mappedBy = "room")
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-    private Set<Task> rooms = new HashSet<>();
+    private Set<Task> tasks = new HashSet<>();
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
         return id;
@@ -53,29 +53,29 @@ public class Room implements Serializable {
         this.name = name;
     }
 
-    public Set<Task> getRooms() {
-        return rooms;
+    public Set<Task> getTasks() {
+        return tasks;
     }
 
-    public Room rooms(Set<Task> tasks) {
-        this.rooms = tasks;
+    public Room tasks(Set<Task> tasks) {
+        this.tasks = tasks;
         return this;
     }
 
-    public Room addRoom(Task task) {
-        this.rooms.add(task);
+    public Room addTasks(Task task) {
+        this.tasks.add(task);
         task.setRoom(this);
         return this;
     }
 
-    public Room removeRoom(Task task) {
-        this.rooms.remove(task);
+    public Room removeTasks(Task task) {
+        this.tasks.remove(task);
         task.setRoom(null);
         return this;
     }
 
-    public void setRooms(Set<Task> tasks) {
-        this.rooms = tasks;
+    public void setTasks(Set<Task> tasks) {
+        this.tasks = tasks;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 

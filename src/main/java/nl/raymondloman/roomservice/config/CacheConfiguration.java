@@ -43,6 +43,7 @@ public class CacheConfiguration {
             cm.createCache(nl.raymondloman.roomservice.domain.Task.class.getName(), jcacheConfiguration);
             cm.createCache(nl.raymondloman.roomservice.domain.Room.class.getName(), jcacheConfiguration);
             cm.createCache(nl.raymondloman.roomservice.domain.Room.class.getName() + ".rooms", jcacheConfiguration);
+            cm.createCache(nl.raymondloman.roomservice.domain.Room.class.getName() + ".tasks", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

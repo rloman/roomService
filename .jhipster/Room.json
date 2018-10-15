@@ -9,7 +9,7 @@
     "relationships": [
         {
             "relationshipType": "one-to-many",
-            "relationshipName": "room",
+            "relationshipName": "tasks",
             "otherEntityName": "task",
             "otherEntityRelationshipName": "room"
         }

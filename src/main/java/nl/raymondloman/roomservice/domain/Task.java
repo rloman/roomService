@@ -34,7 +34,7 @@ public class Task implements Serializable {
     private LocalDate dueDate;
 
     @ManyToOne
-    @JsonIgnoreProperties("rooms")
+    @JsonIgnoreProperties("tasks")
     private Room room;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove

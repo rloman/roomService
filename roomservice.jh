@@ -10,7 +10,7 @@ entity Room {
 }
 
 relationship OneToMany {
-	Room{room} to Task
+	Room{tasks(title)} to Task
 }
 
 
