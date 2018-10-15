@@ -1,0 +1,26 @@
+{
+    "name": "Room",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "room",
+            "otherEntityName": "task",
+            "otherEntityRelationshipName": "room"
+        }
+    ],
+    "changelogDate": "20181015085653",
+    "entityTableName": "room",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
